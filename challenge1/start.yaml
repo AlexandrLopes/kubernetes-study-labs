@@ -1,0 +1,37 @@
+items:
+  - banana
+  - orange
+  - strawberry
+  - brocoli
+  - cabbage
+  - grapes
+  - carrot
+  - tomato
+  - peppers
+  - watermelon
+  - lettuce
+
+fruit:
+  collor:
+    yellow:
+      - banana
+    red:
+      - strawberry
+      - tomato
+      - peppers
+    green:
+      - brocoli
+      - watermelon
+      - lettuce
+    orange:
+      - orange
+      - carrot
+    purple:
+      - grapes
+    white:
+      - cabbage
+
+veg:
+  - lettuce
+  - tomato
+  - cabbage
