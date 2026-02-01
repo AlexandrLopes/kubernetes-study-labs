@@ -1,0 +1,15 @@
+shopping:
+  - eggs: 1
+  - milk: 2
+  - fruit: apple
+
+#key: value
+
+purchased:
+  fruit:
+    apple: 1
+    banana: 2
+  needToBuy:
+    - coffe
+    - tea
+    - milk
