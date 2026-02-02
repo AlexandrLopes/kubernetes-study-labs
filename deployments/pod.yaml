@@ -3,10 +3,11 @@ kind: Pod
 metadata:
   name: nginx
   labels:
-    name: myPod
+    name: my-pod
+    type: proxy
 spec:
   containers:
-    - name: nginxContainer
+    - name: nginx-container
       image: nginx:latest
       resources:
         limits:
@@ -14,3 +15,7 @@ spec:
           cpu: "500m"
       ports:
         - containerPort: 80
+# minikube start (starts)
+# kubectl create -f pod.yaml (Create)
+# kubectl get pods   (Show)
+# kubectl delete pod nginx (Deleted)
