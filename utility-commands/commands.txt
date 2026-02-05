@@ -1,0 +1,5 @@
+Comando,Para que serve?
+kubectl get pods,"Ver o status geral (Running, Pending, Error)."
+kubectl describe pod <nome>,"O mais importante. Mostra os eventos do K8s (ex: falta de memória, erro ao puxar imagem)."
+kubectl logs <nome> -f,Ver a saída do erro de dentro da aplicação (ex: erro de conexão com banco).
+kubectl exec -it <nome> -- sh,"""Entrar"" no container para testar conectividade interna."
