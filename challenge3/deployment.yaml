@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: webdeploych
+  labels:
+    name: webdeploych
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      server: web
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
+  template:
+    metadata:
+      labels:
+        server: web
+    spec:
+      containers:
+        - name: webch
+          image: httpd:2.4
+          resources:
+            limits:
+              memory: "500Mi"
+              cpu: "500m"
+          ports:
+            - containerPort: 80
