@@ -7,3 +7,9 @@ It documents my technical evolution, focusing on programming logic, data structu
 ## Objectives
 * Register my evolution with Kubernetes courses and studies
 * Document solutions from Kubernetes challenges.
+
+
+### Current Content Detail:
+
+#### Remembers (Concepts & Syntax)
+* **Kubernetes commands**
