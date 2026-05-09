@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: more-practice
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: more-practice
+  template:
+    metadata:
+      labels:
+        app: more-practice
+    spec:
+      containers:
+        - name: more-practice
+          image: my-python-app:latest
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 5000
